@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic">
+    <sys_cb_topic action="INSERT_OR_UPDATE">
+        <applicability/>
+        <applicability_mode>query</applicability_mode>
+        <autopilot_topic>false</autopilot_topic>
+        <category/>
+        <channels/>
+        <connect_queue/>
+        <description>Virtual Agent topics for the NeedIt Virtual Agent Conversations   application</description>
+        <dialog_acts_enabled>true</dialog_acts_enabled>
+        <expose_on_palette>false</expose_on_palette>
+        <flexible_conversation_switching>false</flexible_conversation_switching>
+        <graph>{
+  "graph_api_version": "1.0.47",
+  "goals": {
+    "primary": {
+      "id": "primary",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "50553923959b4e21ab96d069ca525932": {
+          "id": "50553923959b4e21ab96d069ca525932",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "75b01b17bc094c47875fcaa7187a96dc": {
+          "id": "75b01b17bc094c47875fcaa7187a96dc",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "9d2944ccb28e4d0eaebc2e5d4d3badaf": {
+          "name": "NeedIt Type",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Which type of NeedIt record would you like to view?"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "skipReprompt": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "variableId": "327dbd8c956e49d2a9dc61496341b65b",
+          "id": "9d2944ccb28e4d0eaebc2e5d4d3badaf",
+          "stepType": "ChoicePrompt",
+          "hasCardHeader": false,
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          },
+          "withNluUserInput": true,
+          "skipIfFulfilled": false
+        },
+        "099450c31d134c0d9bc175bec8b744c6": {
+          "id": "099450c31d134c0d9bc175bec8b744c6",
+          "stepType": "TextOutput",
+          "name": "Confirm NeedIt Type",
+          "secure": false,
+          "value": [
+            {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    },
+                    {
+                      "type": "datapill",
+                      "dataPill": {
+                        "value": "{{vaInputs.needit_type}}",
+                        "displayValue": "Input Variables➛NeedIt Type"
+                      },
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    },
+                    {
+                      "text": "You Selected:"
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple",
+              "_key": "19f50c98aa72491ca9cb18752492e252"
+            }
+          ],
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        }
+      },
+      "edges": [
+        {
+          "id": "8a26d0c18e5a425698ff6b14b5e02dc8",
+          "edgeType": "Edge",
+          "source": "50553923959b4e21ab96d069ca525932",
+          "target": "9d2944ccb28e4d0eaebc2e5d4d3badaf",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "c61a6d7a61ce477c895d76b5298dcdfa",
+          "edgeType": "Edge",
+          "source": "9d2944ccb28e4d0eaebc2e5d4d3badaf",
+          "target": "099450c31d134c0d9bc175bec8b744c6",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "243b488dca024ac98e4acecd190850f8",
+          "edgeType": "Edge",
+          "source": "099450c31d134c0d9bc175bec8b744c6",
+          "target": "75b01b17bc094c47875fcaa7187a96dc",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {
+    "current-user": {
+      "category": "vaInputs",
+      "id": "current-user",
+      "label": "User",
+      "name": "user",
+      "table": "sys_user",
+      "varType": "reference"
+    },
+    "327dbd8c956e49d2a9dc61496341b65b": {
+      "id": "327dbd8c956e49d2a9dc61496341b65b",
+      "name": "needit_type",
+      "label": "NeedIt Type",
+      "varType": "choice",
+      "choices": [
+        {
+          "label": "Legal",
+          "value": "legal"
+        },
+        {
+          "label": "Facilities",
+          "value": "facilities"
+        },
+        {
+          "label": "Human Resources",
+          "value": "human resources",
+          "checked": true,
+          "meta": {}
+        }
+      ],
+      "category": "vaInputs",
+      "nodeId": "9d2944ccb28e4d0eaebc2e5d4d3badaf",
+      "isHidden": false
+    }
+  }
+}</graph>
+        <key_phrases>NeedIt Virtual Agent Topics</key_phrases>
+        <library>false</library>
+        <live_agent>false</live_agent>
+        <modify_confirmation_enabled>true</modify_confirmation_enabled>
+        <name>NeedIt Virtual Agent Topics</name>
+        <nlu_intent/>
+        <nlu_intent_label/>
+        <nlu_model/>
+        <nlu_model_label/>
+        <nlu_provider/>
+        <palette_label/>
+        <roles/>
+        <root_topic_id/>
+        <secure_custom_input_control>false</secure_custom_input_control>
+        <source_topic_id/>
+        <sys_class_name>sys_cb_topic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-22 14:03:49</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>22dba6bd47343110081b86c8436d4338</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>NeedIt Virtual Agent Topics</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_cb_topic_22dba6bd47343110081b86c8436d4338</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-22 14:44:28</sys_updated_on>
+        <triggerable_by_notification>false</triggerable_by_notification>
+        <type>STANDARD</type>
+    </sys_cb_topic>
+    <sys_translated_text action="delete_multiple" query="documentkey=22dba6bd47343110081b86c8436d4338"/>
+</record_update>
