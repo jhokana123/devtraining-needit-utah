@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-28 19:12:48</sys_created_on>
+        <sys_id>b8d2cf7197d43110f8f9fed11153afbc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name> GetEmailAddress.x_58872_needit.admin</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_security_acl display_value=" GetEmailAddress">30d2cf7197d43110f8f9fed11153afb9</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_b8d2cf7197d43110f8f9fed11153afbc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-28 19:12:48</sys_updated_on>
+        <sys_user_role display_value="x_58872_needit.admin" name="x_58872_needit.admin">168e57609f213200bde5f79ff57fcfb4</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</application>
+        <file_path/>
+        <instance_id>618532f8dbe7555007072f17d49619ed</instance_id>
+        <instance_name>dev146189</instance_name>
+        <name>sys_security_acl_role_b8d2cf7197d43110f8f9fed11153afbc</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-07-28 19:12:48</sys_created_on>
+        <sys_id>b8d2cf7197d43110f8f9fed11153afbc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name> GetEmailAddress.x_58872_needit.admin</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_security_acl display_value=" GetEmailAddress">30d2cf7197d43110f8f9fed11153afb9</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_b8d2cf7197d43110f8f9fed11153afbc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-07-28 19:12:48</sys_updated_on>
+        <sys_user_role display_value="x_58872_needit.admin" name="x_58872_needit.admin">168e57609f213200bde5f79ff57fcfb4</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>]]></payload>
+        <payload_hash>-1297848228</payload_hash>
+        <record_name> GetEmailAddress.x_58872_needit.admin</record_name>
+        <reverted_from/>
+        <source>a0b21a1047f03110081b86c8436d434a</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-17 20:23:19</sys_created_on>
+        <sys_id>b0c2de1047f03110081b86c8436d4372</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18a052ab4b40000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-17 20:23:19</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>70c2de10f0f031100d0fd674fe822672</update_guid>
+        <update_guid_history>70c2de10f0f031100d0fd674fe822672:-1297848228</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value=" GetEmailAddress.x_58872_needit.admin">d0d1ef7a47b03110081b86c8436d435d</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-25 20:33:30</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>1c4da6d010954b2794d9825afda36ce1</sys_id>
+        <sys_metadata>b8d2cf7197d43110f8f9fed11153afbc</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name> GetEmailAddress.x_58872_needit.admin</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_parent display_value=" GetEmailAddress">30d2cf7197d43110f8f9fed11153afb9</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_scope_delete display_value="">94872a8897db403e8ee69a431de2fca4</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_b8d2cf7197d43110f8f9fed11153afbc</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_b8d2cf7197d43110f8f9fed11153afbc">b0c2de1047f03110081b86c8436d4372</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-25 20:33:30</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
